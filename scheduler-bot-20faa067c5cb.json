@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "scheduler-bot-45408",
+  "private_key_id": "20faa067c5cbb8cb149cd057de43e3fe81fee443",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDLsT5esd/Ovf5s\njlobzZcmh1b1nLO1i+vfEcRHSU8a65osKTSuguiu6laygULPqYYQcRq1ljor2duf\n/vvBDasRlC8zEtgpXbnDVXIJ4wLSS4Oif6ehsOPQgt7hND4+sxKyWonGGsz3HMOD\n5avaYLstzAnin08hO6IJwJeY+BjHKA9JisSbEI2x5HcnDbh1vtlgKm1EjPgGeqrx\n03Fap5vmCw/OriBp0Ud0rQvxMC8l/WibQiXOfeC5s+4b+UE8guCXt7yrPCA2XVrw\nDrX0Bc41RWd0PLIceUtJ/K3/WU1bCahd+QHWKKzaeRBuvQAlMEyZUVq4x9LQYk9P\nuZO8OSBtAgMBAAECggEABx3O6SOLkHPe7z9/PfCAeu66xIE3J2Y3UMCUecRmO/Fv\ngtBAu8GtdRj+6YBJ+T0DBuM+cC54bHW193LwmfpB81N0SyEec5mHglaso/jb0fvb\nD/UVuR1X0fUCRYLlJa8kBtVkloHOsw580KPqlq7GIRQ7Y8DtC2w6eTplAYCffUck\nztQCweOC4rahxx7oFwZ3bWXJYzXWeE+9fbwyNIJQY2ICrEpZJpch1BXSI5S/Jvkl\ngii03A1DOnBA47JXxPkBnPj1VIwL7w+3Pks2jLSWPwmWhycRBFRegpNLAS1dsBs3\nnVJnAzKRUO4IbLgUfXOys5bIqadgiYUwr63KgIBV8QKBgQDpsR76/UNvScYJvtcN\n4PYv2vJ9ZEF0m4Dg7v5evcvKTEq7gecISRj/LLVv0vO6ZMCHOMpNA38WVKHr09u7\nARtisefNHr8bZO+FKbCDy5G3Nn/0Pw6AAKYm/Lwr28pUK899NZPudEu+NuJBiivd\nyhAxdjSUlBsIBK/QQIdtYF9fEQKBgQDfIwFHWX9kD4ztv4mVOtdtB00JVx+nOh/7\nIO5fG+yUyLWNwStiBcRUno9w/vJ9f8EBW+U+N1NhahNhveGNWjQ3ESITS0+p4z/X\nOCO3A0I5yPF2XgfxbrjE/kdtagff8oXro7skGBcJskXE3rh1ZXdmwwhdfeNFtL1W\noM5PjPSjnQKBgBeG832FXfKoVL3KbtBA48gxnNQu8cARn8oFhap4JTo6sBNsopvc\n8B1QnPujG1Karh9vAj76qSLQZnTdoXOUSvOGwbWO8OKLKOoZJmI+bm8pl3w5lPYi\nGpg2PaOUvyv2NS9/42LQZofB8slyZbQwkazJH8YNmyMVhbXLqVbDqxZhAoGBAKL8\nMKzrJG/0I95tL5O/PSe4U37lEovVmxKWBUeXYAF1cZevZ37b84JTpzbEIl+k91eE\nxjfhtZfMIYgdaCkVoFowu5EYS4IuKa2MphnB2ZfXvPfWyzqAw5mwmn/DGSltPoDW\nQZWluv4sJ2YbwOSPTt3Sy8Nudpmt4Tbrkobs0KzJAoGBAKTRwOZP8IE+qt+muuE2\nwK60MVSCI+1yLesNZneIrVyGRmuHWj1qh6RKUPjjXyTcF+QnoKPmwikxbUTGaFf+\nBl+wfz3VZjm3pbpDJiH9eEI3Nbr0IIo62D4Mta10MTEcuMT1BXCxu/9aenEI68UO\n1lL+3+4mSnUKetTHHjxRQTD8\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-rwmulk@scheduler-bot-45408.iam.gserviceaccount.com",
+  "client_id": "105738394088709370033",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-rwmulk%40scheduler-bot-45408.iam.gserviceaccount.com"
+}
