@@ -113,7 +113,9 @@ rtm.on('message', (event) => {
         }
       })
       .then(responses => {
+        console.log(event);
         console.log('Detected intent');
+        console.log(responses);
         const result = responses[0].queryResult;
         console.log(`  Query: ${result.queryText}`);
         console.log(`  Response: ${result.fulfillmentText}`);
@@ -132,14 +134,53 @@ rtm.on('message', (event) => {
                   var params = result.parameters.fields
                   console.log('params', params)
                   if (params) {
-                    makeCalendarAPICall({
+                    if (params.person) {
+                      console.log('It is an event!')
+                      // const oauth2Client = new google.auth.OAuth2(
+                      //   process.env.CLIENT_ID,
+                      //   process.env.CLIENT_SECRET,
+                      //   process.env.REDIRECT_URL
+                      // )
+                      //
+                      // oauth2Client.setCredentials({
+                      //   access_token: user.accessToken,
+                      //   token_type: 'Bearer',
+                      //   refresh_token: user.refreshToken,
+                      //   expiry_date: 1530585071407
+                      // })
+                      //
+                      // const calendar = google.calendar({version: 'v3', auth: oauth2Client});
+                      // console.log(params.time.structValue.fields)
+
+                      // calendar.freebusy.query({
+                      //   "timeMin": '2018-07-26T07:00:00-07:00',
+                      //   "timeMax": '2018-07-26T09:00:00-07:00',
+                      //   "items": [
+                      //     {
+                      //       "id": "primary"
+                      //     }
+                      //   ]
+                      // }, (err, {data}) => {
+                      //   if (err) return console.log('The API returned an error: ' + err);
+                      //   console.log('Oh Yeah!')
+                      //   console.log(data.calendars.primary.busy.length)
+                      // })
+
+                      makeCalendarAPICall({
+                        access_token: user.accessToken,
+                        token_type: 'Bearer',
+                        refresh_token: user.refreshToken,
+                        expiry_date: 1530585071407
+                      }, {summary: params.subject.stringValue, attendees: params.person.stringValue, start: params.time.structValue.fields.startTime.stringValue, end: params.time.structValue.fields.endTime.stringValue})
+                    }
+                    else {makeCalendarAPICall({
                       access_token: user.accessToken,
                       token_type: 'Bearer',
                       refresh_token: user.refreshToken,
                       expiry_date: 1530585071407
                     }, {start: params.date.stringValue, end: params.date.stringValue, summary: params.subject.stringValue})
-                  }
-   
+                  }}
+
                 })
                 .catch((err) => console.log('ERROR', err));
 
@@ -148,7 +189,7 @@ rtm.on('message', (event) => {
                   console.log('req received', req.query.code)
                   oauth2Client.getToken(req.query.code, (err, token) => {
                     if (err) return console.log('error', err)
-                    oauth2Client.setCredentials(token);  
+                    oauth2Client.setCredentials(token);
                     console.log('token', token)
                     new User({accessToken: token.access_token, refreshToken: token.refresh_token, username: event.channel})
                       .save(function (err, updateduser) {
@@ -157,9 +198,9 @@ rtm.on('message', (event) => {
                       })
                       .catch((err) => res.status(500).end(err.message))
                   })
-                
+
                 })
-          
+
                 web.chat.postMessage({channel: event.channel, text: 'Authorize this app by visiting this url: ' + url})
                 .then((res) => {
                   console.log(`(channel:${event.channel}) ${event.user} says: ${event.text}`);
@@ -169,7 +210,7 @@ rtm.on('message', (event) => {
                 web.chat.postMessage({channel: event.channel, text: result.fulfillmentText})
                 .then((res) => {
                   console.log(`(channel:${event.channel}) ${event.user} says: ${event.text}`);
-                  
+
                 })
                 .catch(console.error);
               }
