@@ -8,14 +8,6 @@ Who is our immediate customer?
 
 Teams who use Slack and actively schedule meetings on Google Calendar. 
 
-Examples: 
-Engineering Teams
-Sales Teams
-Marketing Teams
-Agencies 
-Consulting Firms 
-Middle Management across the board. 
-
 Why are we building this now? 
 
 Productivity is hard to come by in fast-paced work environments. Dozens of browsers tabs, desktop apps,  and mobile notifications drown your ability to focus and concentrate. As companies like Google, Facebook, Amazon and IBM continue to build powerful AI-based platforms and tools, the barrier to applying machine learning to real user problems is becoming dramatically reduced. 
