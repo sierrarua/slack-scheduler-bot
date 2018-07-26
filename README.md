@@ -1,4 +1,4 @@
-# bot-schedule
+# slack-scheduler-bot
 
 What are we building?
 
