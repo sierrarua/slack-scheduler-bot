@@ -1,7 +1,7 @@
-export CLIENT_ID="1090849197586-vvkes74pft984uc96ogkjd9faej26ki9.apps.googleusercontent.com
-export"
-export CLIENT_SECRET="1090849197586-vvkes74pft984uc96ogkjd9faej26ki9.apps.googleusercontent.com
-"
+export CLIENT_ID="1090849197586-55q34668h5qfvvhlj1ph1j366s0tlvuq.apps.googleusercontent.com"
+export CLIENT_SECRET="RZXeXcWlB6TN01Ck41aryNWU"
 export REDIRECT_URL="http://localhost:1337/oauthcallback"
 export SLACK_BOT_TOKEN="xoxb-402883401617-403207694372-DJNtg4Aw90cPgQjIDdZ6iQMH"
-export 
+export AUTH_TOKEN="xoxp-402883401617-402883402721-402736016128-c9693631bff0c6f7f0b9ec863b98169f"
+export GOOGLE_APPLICATION_CREDENTIALS="./scheduler-bot-20faa067c5cb.json"
+export MONGODB_URI="mongodb://schedulebot:schedulebot123@ds253891.mlab.com:53891/schedulebot"
