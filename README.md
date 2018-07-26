@@ -14,4 +14,4 @@ Productivity is hard to come by in fast-paced work environments. Dozens of brows
 
 Scheduler Bot solves a real customer problem by streamlining workflow for a very large, immediately addressable market (teams who schedules meetings and use Slack) at the exact right time (advent of new powerful, easy-to-use AI technologies + proliferation of software tools used on job)
 
-Technology used: API.AI; Slack API; Google Calendar API.
+Technologies used: API.AI, Slack API, Google Calendar API.
